@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.codurance.training.tasks.Task;
+import com.codurance.training.tasks.objects.Task;
 
 public class Add {
 	
