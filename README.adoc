@@ -64,6 +64,8 @@ les autres langages si ça vous aide.
 . À partir du code de test fourni, déterminez ce que fait
 l'application et comment elle fonctionne.
 
+REP: l'application possède quelques commandes qui permettent à l'utilisateur d'enregistrer des tasks (phrase en string) de les classer par catégorie. Il a aussi la possibilité de checker chaque task.
+
 == Travail à effectuer
 
 Vous avez seulement 3 séances de 1,5h en semaines 1 pour améliorer le plus possible le code (sans en changer les fonctionalités ni en ajouter nécessairement) de cette application, en y intégrant vos acquis de l'IUT :
