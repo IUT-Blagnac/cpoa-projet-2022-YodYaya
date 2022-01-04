@@ -64,7 +64,7 @@ les autres langages si ça vous aide.
 . À partir du code de test fourni, déterminez ce que fait
 l'application et comment elle fonctionne.
 
-REP: l'application possède quelques commandes qui permettent à l'utilisateur d'enregistrer des tasks (phrase en string) de les classer par catégorie. Il a aussi la possibilité de checker chaque task.
+REPONSE : L'application possède quelques commandes qui permettent à l'utilisateur d'enregistrer des tasks (phrase en string) de les classer par catégorie. Il a aussi la possibilité de checker chaque task.
 
 == Travail à effectuer
 
