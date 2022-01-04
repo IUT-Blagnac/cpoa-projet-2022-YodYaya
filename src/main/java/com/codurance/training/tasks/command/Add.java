@@ -1,14 +1,18 @@
 package com.codurance.training.tasks.command;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.codurance.training.tasks.Task;
 
 public class Add {
 	
-	
-	   private void add(String commandLine) {
+   private final Map<String, List<Task>> tasks = new LinkedHashMap<>();
+
+	   @SuppressWarnings("unused")
+	private void add(String commandLine) {
 	        String[] subcommandRest = commandLine.split(" ", 2);
 	        String subcommand = subcommandRest[0];
 	        if (subcommand.equals("project")) {
