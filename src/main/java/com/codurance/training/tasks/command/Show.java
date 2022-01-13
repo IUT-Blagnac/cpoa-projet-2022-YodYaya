@@ -5,22 +5,33 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.codurance.training.tasks.TaskList;
+import com.codurance.training.tasks.objects.Project;
 import com.codurance.training.tasks.objects.Task;
 
 public class Show {
 	
-	 private final Map<String, List<Task>> tasks = new LinkedHashMap<>();
-	 private final PrintWriter out = null;
-	 
-	@SuppressWarnings("unused")
-	private void show() {
-        for (Map.Entry<String, List<Task>> project : tasks.entrySet()) {
-            out.println(project.getKey());
-            for (Task task : project.getValue()) {
-                out.printf("    [%c] %d: %s%n", (task.isDone() ? 'x' : ' '), task.getId(), task.getDescription());
+    public Show() {
+    	
+    	
+        for ( Project projet : TaskList.projetsList) {
+        	
+        	TaskList.sayConsole(projet.getName(),true);
+        	
+            for (Task task : projet.getTaskList()) {
+            	
+            	String chaine = "    ";
+            	
+            	if(task.isDone()) chaine += "[x]";
+            	else chaine += "[ ]";
+            	
+            	
+                chaine += " "+task.getId()+": "+task.getDescription();
+                TaskList.sayConsole(chaine,true);
+                
             }
-            out.println();
+            TaskList.sayConsole("",true);
         }
+       
     }
-
 }
