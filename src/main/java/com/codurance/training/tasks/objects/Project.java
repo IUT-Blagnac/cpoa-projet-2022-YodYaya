@@ -11,13 +11,14 @@ public final class Project {
 	
 	private final String name;
 	private final ArrayList<Task> tasks;
-	
+	private long NbTaskAdded;
 	
 	
 	
     public Project(String name) {
         this.name = name;
         this.tasks = new ArrayList<Task>();
+        this.NbTaskAdded = 0;
     }
     
     
@@ -29,37 +30,25 @@ public final class Project {
     public Task getTask(long idTask) {
         return this.tasks.get((int) idTask);
     }
-
-/*
-    public List<Task> getTasksDueFor(LocalDate date) {
-        List<Task> tasksDue = new ArrayList<>();
-        for (Task task : this.tasks.values()) {
-            if (date.equals(task.getDeadline())) {
-                tasksDue.add(task);
-            }
-        }
-        return tasksDue;
-    }*/
-
-/*
-    public List<Task> getTasksWithDeadline() {
-        List<Task> tasksWithDeadline = new ArrayList<>();
-        for (Task task : this.tasks.values()) {
-            if (task.getDeadline() != null) {
-                tasksWithDeadline.add(task);
-            }
-        }
-        return tasksWithDeadline;
+    
+    public ArrayList<Task> getTaskList() {
+        return this.tasks;
     }
-*/
+
 
     public void addTask(Task task) {
         this.tasks.add(task);
+        this.NbTaskAdded++;
     }
+    
+    public long getNbTaskAdded() {
+    	return this.NbTaskAdded;
+    }
+    
+    
     
 
 
 }
     
 	
-
