@@ -80,6 +80,12 @@ TIP: Commencez par le plus simple. Le patron le plus complexe n'est pas toujours
 TIP: Dans votre étude, anticipez de possibles futures évolutions de l'application. Ex: affichage déporté, configuration de plusieurs algorithmes, types de stockages des données... (l'objectif de ce projet est de refactorer le code, pas d'ajouter de nouvelles fonctionnalités).
 
 ifndef::uk[]
+
+== Travail effectué
+
+
+
+
 == Attendus du projet
 
 ifdef::slides[:leveloffset: -1]
