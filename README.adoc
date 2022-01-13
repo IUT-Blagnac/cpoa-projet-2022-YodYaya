@@ -83,9 +83,8 @@ ifndef::uk[]
 
 == Travail effectué
 
-image::{Image/unknown.png}[]
 
-
+image::Package.jpg[link="Image/unknown.png",width=40%]
 
 == Attendus du projet
 
