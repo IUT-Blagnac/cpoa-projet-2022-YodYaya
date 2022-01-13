@@ -83,7 +83,7 @@ ifndef::uk[]
 
 == Travail effectué
 
-image::{https://github.com/IUT-Blagnac/cpoa-projet-2022-YodYaya/blob/main/Image/unknown.png}[]
+image::{Image/unknown.png}[]
 
 
 
