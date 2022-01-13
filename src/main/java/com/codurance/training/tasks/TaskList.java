@@ -12,12 +12,14 @@ import com.codurance.training.tasks.command.Help;
 import com.codurance.training.tasks.command.Show;
 import com.codurance.training.tasks.command.Uncheck;
 import com.codurance.training.tasks.objects.Project;
-
+/*
+ * class principale
+ */
 public class TaskList implements Runnable {
 	
 	
-    public static ArrayList<Project> projetsList = new ArrayList<Project>();
-    public static long lastIdTask = 1 ;
+    public static ArrayList<Project> projetsList = new ArrayList<Project>();//stocker les projet et leurs taches
+    public static long lastIdTask = 1 ;//permet de definir l identifiant d une nouvelle tache
     private static BufferedReader in ;
     private static PrintWriter out ;
 	
@@ -32,6 +34,7 @@ public class TaskList implements Runnable {
 		
 	}
 	
+	//code de la console
 	public void run() {
 	
     while (true) {
@@ -53,7 +56,12 @@ public class TaskList implements Runnable {
 	
 	
 	
-	
+	/**
+	 * permet d envoyer un message sur l afficheur de la console
+	 * 
+	 * @param message
+	 * @param retourLigne (inclure un retour a la ligne)
+	 */
 	public static void sayConsole(String message,boolean retourLigne) {
 				out.print(message);
 				
@@ -63,7 +71,11 @@ public class TaskList implements Runnable {
 	
 
 	 
-	
+	/**
+	 * execute un comportement selon la commande saisie
+	 * 
+	 * @param commande
+	 */
     private void execute(String commandLine) {
         String[] commandRest = commandLine.split(" ", 2);
         String command = commandRest[0];

@@ -4,7 +4,9 @@ import com.codurance.training.tasks.TaskList;
 
 public class Help  {
 
-	
+	/**
+	 *   affiche les commandes
+	 */
 	public Help() {
 		
 	String chaine ="";	

@@ -8,7 +8,11 @@ import com.codurance.training.tasks.objects.Task;
 
 public class Add {
 	
-	
+	/**
+	 * Ajoute un projet ou une tâche
+	 * 
+	 * @param commandLine
+	 */
     public Add(String commandLine) {
         String[] subcommandRest = commandLine.split(" ", 2);
         String subcommand = subcommandRest[0];
@@ -20,12 +24,22 @@ public class Add {
         }
     }
 
+    /**
+     * ajouter un projet
+     * 
+     * @param nom du projet
+     */
     private void addProject(String name) {
         TaskList.projetsList.add(new Project(name));
     }
 
     
-    
+    /**
+     * Ajouter une tâche
+     * 
+     * @param nom du project concerné
+     * @param description de la tâche
+     */
     private void addTask(String project, String description) {
     	
     	int idProject = getProject(project);
@@ -41,7 +55,12 @@ public class Add {
     	
     	
 
-
+/**
+ * recupere l'indice du projet pour addTask
+ * 
+ * @param nom du projet
+ * @return l'indice du projet
+ */
 	private int getProject(String projectName) {
 	
 	

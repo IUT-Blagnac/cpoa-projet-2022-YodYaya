@@ -6,6 +6,11 @@ import com.codurance.training.tasks.objects.Task;
 
 public class Uncheck  {
 
+	/**
+	 * uncheck une tache
+	 * 
+	 * @param identifiant de la tache
+	 */
 	public Uncheck(String idString) {
 		
         

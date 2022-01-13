@@ -6,7 +6,11 @@ import com.codurance.training.tasks.objects.Task;
 
 public class Check {
 
-
+/**
+ * check une tache
+ * 
+ * @param identifiant de la tache
+ */
 	public Check(String idString) {
 		
         

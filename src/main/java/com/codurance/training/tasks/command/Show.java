@@ -11,13 +11,17 @@ import com.codurance.training.tasks.objects.Task;
 
 public class Show {
 	
+	/**
+	 * commande show
+	 */
     public Show() {
     	
-    	
+    	//afficher tout les projets
         for ( Project projet : TaskList.projetsList) {
         	
-        	TaskList.sayConsole(projet.getName(),true);
+        	TaskList.sayConsole(projet.getName(),true);//affiche le nom du projet
         	
+        	//leurs taches
             for (Task task : projet.getTaskList()) {
             	
             	String chaine = "    ";
@@ -27,7 +31,7 @@ public class Show {
             	
             	
                 chaine += " "+task.getId()+": "+task.getDescription();
-                TaskList.sayConsole(chaine,true);
+                TaskList.sayConsole(chaine,true);//afficher toute les taches
                 
             }
             TaskList.sayConsole("",true);
