@@ -6,16 +6,6 @@
 
 = DUT-Info/S3/M3105 (CPOA) : Projet refactoring
 
-Jean-Michel Bruel
-v22.1, {localdate}
-:mailto: jbruel@gmail.com
-:status: bottom
-:inclusion:
-:experimental:
-:toc: toc2
-:numbered:
-
-
 Nom:: YAHIA  | Boyer
 
 Prénom:: Yazid   | Lucas
