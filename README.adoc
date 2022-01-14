@@ -3,7 +3,9 @@
 //  Copyright (c) 2022 IRIT/U. Toulouse. All rights reserved.
 // Thanks to Louis Chanoua for contributions
 // ------------------------------------------
+
 = DUT-Info/S3/M3105 (CPOA) : Projet refactoring
+
 Jean-Michel Bruel
 v22.1, {localdate}
 :mailto: jbruel@gmail.com
@@ -13,7 +15,16 @@ v22.1, {localdate}
 :toc: toc2
 :numbered:
 
+
+Nom:: YAHIA  | Boyer
+
+Prénom:: Yazid   | Lucas
+
+Groupe #:: 3B
+
+
 // ------------------------------------------
+
 
 == Refactoring d'un code existant
 
